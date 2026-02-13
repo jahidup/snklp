@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📘 Exam Portal – User Guide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body { background: linear-gradient(145deg, #f0f4ff 0%, #e6edfa 100%); min-height: 100vh; }
+    .glass-panel { background: rgba(255,255,255,0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.3); box-shadow: 0 25px 40px -15px rgba(0,0,0,0.1); }
+    .step { background: rgba(255,255,255,0.5); border-left: 4px solid #3b82f6; }
+  </style>
+</head>
+<body class="font-sans p-6">
+  <div class="max-w-4xl mx-auto">
+    <!-- Header -->
+    <div class="glass-panel rounded-3xl p-6 mb-6 text-center">
+      <h1 class="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-700 bg-clip-text text-transparent">
+        <i class="fas fa-book-open mr-2"></i>Exam Portal – Complete User Guide
+      </h1>
+      <p class="text-gray-600 mt-2">Everything you need to know about using the portal as a student or administrator.</p>
+    </div>
+
+    <!-- Quick navigation -->
+    <div class="flex flex-wrap gap-4 justify-center mb-8">
+      <a href="#student" class="bg-white/70 hover:bg-white px-5 py-2 rounded-full shadow-sm text-blue-700 font-medium transition"><i class="fas fa-user-graduate mr-2"></i>For Students</a>
+      <a href="#admin" class="bg-white/70 hover:bg-white px-5 py-2 rounded-full shadow-sm text-indigo-700 font-medium transition"><i class="fas fa-user-cog mr-2"></i>For Admins</a>
+      <a href="#tech" class="bg-white/70 hover:bg-white px-5 py-2 rounded-full shadow-sm text-gray-700 font-medium transition"><i class="fas fa-code mr-2"></i>Technical Notes</a>
+    </div>
+
+    <!-- Student Section -->
+    <div id="student" class="glass-panel rounded-3xl p-6 mb-6">
+      <h2 class="text-2xl font-bold text-blue-700 mb-4 flex items-center gap-3"><i class="fas fa-user-graduate"></i> Student Portal</h2>
+      
+      <div class="space-y-6">
+        <div class="bg-blue-50/50 p-4 rounded-xl step">
+          <h3 class="font-semibold text-lg flex items-center gap-2"><i class="fas fa-sign-in-alt text-blue-600"></i> Login</h3>
+          <p class="text-gray-700 mt-1">Use your <strong>Student ID</strong> and <strong>8‑digit Date of Birth</strong> (DDMMYYYY format). Example: <code>01012005</code>. If you have trouble, contact your administrator.</p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-lg flex items-center gap-2"><i class="fas fa-tachometer-alt text-blue-600"></i> Dashboard Tabs</h3>
+          <div class="grid md:grid-cols-2 gap-4 mt-2">
+            <div class="bg-white/60 p-3 rounded-xl">
+              <span class="font-medium"><i class="fas fa-pencil-alt text-blue-500 mr-1"></i> Tests</span>
+              <p class="text-sm text-gray-600">Shows all available tests you haven't taken yet. Click <kbd class="bg-gray-200 px-2 py-0.5 rounded">Start Test</kbd> to begin.</p>
+            </div>
+            <div class="bg-white/60 p-3 rounded-xl">
+              <span class="font-medium"><i class="fas fa-history text-indigo-500 mr-1"></i> Results</span>
+              <p class="text-sm text-gray-600">Lists your previous test scores, ranks, and submission dates. Click <kbd class="bg-gray-200 px-2 py-0.5 rounded">View Analysis</kbd> for detailed question‑wise review.</p>
+            </div>
+            <div class="bg-white/60 p-3 rounded-xl">
+              <span class="font-medium"><i class="fas fa-chart-bar text-green-500 mr-1"></i> Analysis</span>
+              <p class="text-sm text-gray-600">Select a completed test to see each question, your answer, the correct answer, and marks obtained.</p>
+            </div>
+            <div class="bg-white/60 p-3 rounded-xl">
+              <span class="font-medium"><i class="fas fa-envelope text-purple-500 mr-1"></i> Contact</span>
+              <p class="text-sm text-gray-600">Send a message to your teacher. Messages appear in the admin panel.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-lg flex items-center gap-2"><i class="fas fa-pencil-alt text-blue-600"></i> Taking a Test</h3>
+          <ul class="list-disc list-inside space-y-1 text-gray-700 mt-2">
+            <li><strong>Question types:</strong> Multiple Choice (MCQ) or Numerical answer.</li>
+            <li><strong>MCQ:</strong> Click on one of the four options. Your selection is highlighted and automatically saved.</li>
+            <li><strong>Numerical:</strong> Type your answer in the input box. It auto‑saves when you leave the field.</li>
+            <li><strong>Flag for review:</strong> Click the <i class="fas fa-flag text-amber-600"></i> button to mark a question. Flagged questions appear purple in the navigator.</li>
+            <li><strong>Navigator:</strong> Shows all questions with colour codes: <span class="inline-block w-3 h-3 bg-green-500 rounded-full"></span> answered, <span class="inline-block w-3 h-3 bg-red-400 rounded-full"></span> not answered, <span class="inline-block w-3 h-3 bg-purple-500 rounded-full"></span> flagged. Click any circle to jump.</li>
+            <li><strong>Timer:</strong> Countdown at the top. Turns red when less than 60 seconds remain. Test auto‑submits when time runs out.</li>
+            <li><strong>Submit:</strong> On the last question, the “Next” button becomes “Submit”. Confirm to finish. You cannot change answers after submission.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-lg flex items-center gap-2"><i class="fas fa-chart-line text-blue-600"></i> Results & Analysis</h3>
+          <p class="text-gray-700">After submitting a test, your score and rank are shown. In the Results tab you can open the analysis to see every question with your answer, the correct answer, and the marks you earned (positive, negative, or zero).</p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-lg flex items-center gap-2"><i class="fas fa-envelope text-blue-600"></i> Contact</h3>
+          <p class="text-gray-700">Write a message and click “Send Message”. It will be stored and visible in the admin’s Messages tab.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Admin Section -->
+    <div id="admin" class="glass-panel rounded-3xl p-6 mb-6">
+      <h2 class="text-2xl font-bold text-indigo-700 mb-4 flex items-center gap-3"><i class="fas fa-user-cog"></i> Administrator Panel</h2>
+
+      <div class="space-y-6">
+        <div class="bg-indigo-50/50 p-4 rounded-xl step">
+          <h3 class="font-semibold text-lg flex items-center gap-2"><i class="fas fa-lock text-indigo-600"></i> Login</h3>
+          <p class="text-gray-700 mt-1">Default password: <code>admin123</code> (change it in Settings). After login you see the dashboard with statistics.</p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-lg flex items-center gap-2"><i class="fas fa-chart-pie text-indigo-600"></i> Dashboard</h3>
+          <p class="text-gray-700">Shows total students, tests, questions, and recent toppers from the first test.</p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-lg flex items-center gap-2"><i class="fas fa-users text-indigo-600"></i> Students Tab</h3>
+          <ul class="list-disc list-inside space-y-1 text-gray-700 mt-2">
+            <li><strong>Search:</strong> Filter by ID or name.</li>
+            <li><strong>Add Student:</strong> Fill ID, full name, and exactly 8‑digit DOB (DDMMYYYY). Duplicate ID not allowed.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-lg flex items-center gap-2"><i class="fas fa-file-alt text-indigo-600"></i> Tests Tab</h3>
+          <ul class="list-disc list-inside space-y-1 text-gray-700 mt-2">
+            <li><strong>Create Test:</strong> Provide Test ID (unique), Name, Duration (minutes), and marking scheme (correct/wrong/skip marks). Check “Shuffle questions” if you want random order for each student.</li>
+            <li><strong>Delete Test:</strong> Removes the test, all its questions, responses, and results – use with care.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-lg flex items-center gap-2"><i class="fas fa-question-circle text-indigo-600"></i> Questions Tab</h3>
+          <p class="text-gray-700 mb-2">Select a test from the dropdown, then click “Load Questions”.</p>
+          <ul class="list-disc list-inside space-y-1 text-gray-700">
+            <li><strong>Add Question:</strong> Choose type (MCQ or Numerical). Fields marked “(optional)” can be left empty.</li>
+            <li><strong>MCQ:</strong> Provide four options in English; Hindi is optional. Specify the correct option number (1‑4).</li>
+            <li><strong>Numerical:</strong> Provide the correct numeric answer and an optional tolerance (e.g., 0.1 for ±0.1).</li>
+            <li><strong>Image URL:</strong> Optional – link to an image that will appear with the question.</li>
+            <li><strong>Edit/Delete:</strong> Use the icons next to each question.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-lg flex items-center gap-2"><i class="fas fa-trophy text-indigo-600"></i> Results Tab</h3>
+          <p class="text-gray-700">View all test results. Filter by test, search by student name/ID or test name. Shows student name, test name, score, rank, and submission time.</p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-lg flex items-center gap-2"><i class="fas fa-envelope text-indigo-600"></i> Messages Tab</h3>
+          <p class="text-gray-700">Displays messages sent by students. You can mark them as replied (optional feature).</p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-lg flex items-center gap-2"><i class="fas fa-cog text-indigo-600"></i> Settings Tab</h3>
+          <p class="text-gray-700">Change the admin password.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Notes -->
+    <div id="tech" class="glass-panel rounded-3xl p-6">
+      <h2 class="text-2xl font-bold text-gray-700 mb-4 flex items-center gap-3"><i class="fas fa-code"></i> Technical Notes</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li><strong>DOB format:</strong> Always 8 digits, e.g., <code>15082005</code> for 15th August 2005. Leading zeros are required.</li>
+        <li><strong>Numerical tolerance:</strong> If set, the student’s answer is considered correct if <code>|student - correct| ≤ tolerance</code>.</li>
+        <li><strong>Auto‑save:</strong> MCQ selections and numerical inputs are saved immediately to the server and local storage. If you close the browser and reopen, your answers are restored.</li>
+        <li><strong>Flagged questions:</strong> Stored locally; they persist even if you refresh the page.</li>
+        <li><strong>Time limit:</strong> Once the timer reaches zero, the test is automatically submitted with whatever answers have been saved.</li>
+        <li><strong>Data storage:</strong> All data is stored in Google Sheets via Apps Script. No external database is used.</li>
+      </ul>
+      <p class="mt-4 text-sm text-gray-500">For further assistance, contact the system administrator.</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center text-sm text-gray-500 mt-6">
+      <i class="fas fa-globe mr-1"></i> Exam Portal – Complete User Guide v4.0
+    </div>
+  </div>
+</body>
+</html>
